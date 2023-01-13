@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/Genre.php";
 
 class Movie{
     public $title;
@@ -11,12 +12,16 @@ class Movie{
      * @param [string] $_genre 
      * @param [number] $_vote
      */
-    public function __construct($_title, $_genre, $_releaseDate, $_vote){
+    public function __construct($_title,  $_releaseDate, $_vote, Genre $genre = null){
         $this->setTitle($_title);
-        $this->setGenre($_genre);
         $this->randomReleaseDate($_releaseDate);
         $this->setVote($_vote);
+        $this->getGenre($genre);
 
+
+        if ($genre) {
+            $this->setGenre($genre);
+        }
     }
 
 
