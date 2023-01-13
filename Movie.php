@@ -11,11 +11,12 @@ class Movie{
      * @param [string] $_genre 
      * @param [number] $_vote
      */
-    public function __constructor($_title, $_genre, $_releaseDate, $_vote){
+    public function __construct($_title, $_genre, $_releaseDate, $_vote){
         $this->setTitle($_title);
         $this->setGenre($_genre);
         $this->randomReleaseDate($_releaseDate);
         $this->setVote($_vote);
+
     }
 
 
@@ -53,3 +54,5 @@ class Movie{
         return $this->vote;
     }
 }
+
+?>
