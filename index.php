@@ -1,7 +1,7 @@
 <?php 
-require_once "Movie.php";
+include_once "Movie.php";
 
-$film = new Movie("Pollac", "Horror", "data:");
+$film = new Movie("Pollac", "Horror", "data:", 5);
 
 // $film->randomReleaseDate();
 
