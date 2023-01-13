@@ -1,12 +1,9 @@
 <?php
 
 class Genre{
-    //public $arrayGenre = ["Adventure", "Horror", "Thriller", "Animation", "Fantasy", "Western"];
+
     public $arrayGenre;
 
-    /**
-     * @param [array] $arrayGenre
-     */
 
     public function __construct($_arrayGenre){
         $this->arrayFunction($_arrayGenre);
@@ -18,15 +15,6 @@ class Genre{
         $result = array_rand($array, 1);
         $this->arrayGenre = $result;
     }
-
-
-
-    // public function randomArray(){
-        
-    //     $randomEl = array_rand( $arrayGenre, 1);
-
-    //     $this->arrayGenre = $randomEl;
-    // }
 
 }
 
