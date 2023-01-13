@@ -1,10 +1,9 @@
 <?php 
 require_once "Movie.php";
 
-$film = new Movie();
-$film->title = "Adriana";
-$film->genre = "Horror";
-$film->randomReleaseDate();
+$film = new Movie("Pollac", "Horror", "data:");
+
+// $film->randomReleaseDate();
 
 var_dump($film);
 
