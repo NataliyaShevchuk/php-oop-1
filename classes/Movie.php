@@ -2,10 +2,10 @@
 require_once __DIR__ . "/Genre.php";
 
 class Movie{
-    public $title;
-    public $genre;
-    public $releaseDate;
-    public $vote;
+    protected $title;
+    protected $genre;
+    protected $releaseDate;
+    protected $vote;
 
     /**
      * @param [string] $_title
